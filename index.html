@@ -29,34 +29,38 @@
 
             <div class="col-sm-12 row" id="departure">
                 <div class="col-sm-12">
-                    <a href="#" class="btn btn-sm btn-primary btn-tab no-rad">Adresse</a>
-                    <a href="#" class="btn btn-sm btn-default btn-tab no-rad">Aéroport</a>
-                    <a href="#" class="btn btn-sm btn-default btn-tab no-rad">Gare</a>
-                    <a href="#" class="btn btn-sm btn-default btn-tab no-rad">Autres</a>
+                    <a href="#" class="btn btn-sm btn-primary btn-tab no-rad departure-choose" id="departure-adresse">Adresse</a>
+                    <a href="#" class="btn btn-sm btn-default btn-tab no-rad departure-choose" id="departure-aero">Aéroport</a>
+                    <a href="#" class="btn btn-sm btn-default btn-tab no-rad departure-choose" id="departure-gare">Gare</a>
+                    <a href="#" class="btn btn-sm btn-default btn-tab no-rad departure-choose" id="departure-autres">Autres</a>
                 </div>
                 <div class="col-sm-12">
                     <div class="form-group input-group">
                         <span class="input-group-addon no-rad">
                             <i class="icon ion-android-pin"></i>
                         </span>
-                        <input type="text" class="form-control input-sm no-rad" placeholder="Adresse de depart">
+                        <span id="departure-in">
+                            <input type="text" class="form-control input-sm no-rad" placeholder="Adresse de depart">
+                        </span>
                     </div>
                 </div>
             </div>
 
             <div class="col-sm-12 row" id="arrival">
                 <div class="col-sm-12">
-                    <a href="#" class="btn btn-sm btn-default btn-tab no-rad">Adresse</a>
-                    <a href="#" class="btn btn-sm btn-default btn-tab no-rad">Aéroport</a>
-                    <a href="#" class="btn btn-sm btn-default btn-tab no-rad">Gare</a>
-                    <a href="#" class="btn btn-sm btn-primary btn-tab no-rad">Autres</a>
+                    <a href="#" class="btn btn-sm btn-primary btn-tab no-rad arrival-choose" id="arrival-adresse">Adresse</a>
+                    <a href="#" class="btn btn-sm btn-default btn-tab no-rad arrival-choose" id="arrival-aero">Aéroport</a>
+                    <a href="#" class="btn btn-sm btn-default btn-tab no-rad arrival-choose" id="arrival-gare">Gare</a>
+                    <a href="#" class="btn btn-sm btn-default btn-tab no-rad arrival-choose" id="arrival-autres">Autres</a>
                 </div>
                 <div class="col-sm-12">
                     <div class="form-group input-group">
                         <span class="input-group-addon no-rad">
                             <i class="icon ion-android-pin"></i>
                         </span>
-                        <input type="text" class="form-control input-sm no-rad" placeholder="Adresse de destination">
+                        <span id="arrival-in">
+                            <input type="text" class="form-control input-sm no-rad" placeholder="Adresse de destination">
+                        </span>
                     </div>
                 </div>
             </div>
@@ -67,7 +71,8 @@
                         <label>Type de véhicule</label>
                         <select class="form-control input-sm no-rad">
                             <option>Berline</option>
-                            <option>Aller-retour</option>
+                            <option>SUV</option>
+                            <option>Pick-up</option>
                         </select>
                     </div>
                 </div>
@@ -88,8 +93,10 @@
                     <label>Date et horaire</label>
                     <input type="datetime-local"value="2018-06-02T08:30" class="form-control input-sm no-rad">
                 </div></div>
+                <div class="col-sm-12" id="submit">
+                    <button class="btn btn-primary no-rad">Estimation du cout</button>
+                </div>
             </div>
-
         </div>
     </div>
 

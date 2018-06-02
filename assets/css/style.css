@@ -7,6 +7,9 @@
     width: 500px;
     min-height: 30px;
     /*margin: 0 auto;*/
+    background-color: #333;
+    padding-bottom: 20px;
+    color: #ffffff;
 }
 
 #header{
@@ -14,6 +17,10 @@
     padding: 5px;
     text-align: center;
     color: #ffffff;
+}
+
+.btn-primary{
+    background-color: #2aabd2;
 }
 
 #menu{
@@ -41,4 +48,9 @@
 
 #arrival .input-group-addon{
     color: #c12e2a;
+}
+
+#submit{
+    width: 100%;
+    margin: 0 auto;
 }
