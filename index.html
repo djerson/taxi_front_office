@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taxi Front Office</title>
+    <link rel="stylesheet" href="vendor/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/ionicons-2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="container" id="wrap">
+        <div class="row">
+            <div class="col-sm-12" id="header">
+                <h4>Calculer le prix de votre trajet</h4>
+            </div>
+            <div class="col-sm-12" id="menu">
+                <center>
+                    <button class="btn btn-sm btn-primary no-rad">
+                        <i class="icon ion-android-car"></i>
+                        Simple trajet
+                    </button>
+                    <button class="btn btn-sm btn-default no-rad">
+                        <i class="icon ion-ios-time"></i>
+                        Réservation à l'heure
+                    </button>
+                </center>
+            </div>
+
+            <div class="col-sm-12 row" id="departure">
+                <div class="col-sm-12">
+                    <a href="#" class="btn btn-sm btn-primary btn-tab no-rad">Adresse</a>
+                    <a href="#" class="btn btn-sm btn-default btn-tab no-rad">Aéroport</a>
+                    <a href="#" class="btn btn-sm btn-default btn-tab no-rad">Gare</a>
+                    <a href="#" class="btn btn-sm btn-default btn-tab no-rad">Autres</a>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-group input-group">
+                        <span class="input-group-addon no-rad">
+                            <i class="icon ion-android-pin"></i>
+                        </span>
+                        <input type="text" class="form-control input-sm no-rad" placeholder="Adresse de depart">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 row" id="arrival">
+                <div class="col-sm-12">
+                    <a href="#" class="btn btn-sm btn-default btn-tab no-rad">Adresse</a>
+                    <a href="#" class="btn btn-sm btn-default btn-tab no-rad">Aéroport</a>
+                    <a href="#" class="btn btn-sm btn-default btn-tab no-rad">Gare</a>
+                    <a href="#" class="btn btn-sm btn-primary btn-tab no-rad">Autres</a>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-group input-group">
+                        <span class="input-group-addon no-rad">
+                            <i class="icon ion-android-pin"></i>
+                        </span>
+                        <input type="text" class="form-control input-sm no-rad" placeholder="Adresse de destination">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 row" id="options">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="form-group">
+                        <label>Type de véhicule</label>
+                        <select class="form-control input-sm no-rad">
+                            <option>Berline</option>
+                            <option>Aller-retour</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="form-group">
+                        <label>Trajet</label>
+                        <select class="form-control input-sm no-rad">
+                            <option>Simple aller</option>
+                            <option>Aller-retour</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4"><div class="form-group">
+                    <label>Occupants</label>
+                    <input type="number" min=1 value="1" class="form-control input-sm no-rad">
+                </div></div>
+                <div class="col-sm-12 col-md-8 col-lg-12"><div class="form-group">
+                    <label>Date et horaire</label>
+                    <input type="datetime-local"value="2018-06-02T08:30" class="form-control input-sm no-rad">
+                </div></div>
+            </div>
+
+        </div>
+    </div>
+
+
+<script src="vendor/jQuery-3.2.1/jquery-3.2.1.min.js"></script>
+<script src="vendor/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
